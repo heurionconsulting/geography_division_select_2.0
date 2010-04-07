@@ -1,0 +1,9 @@
+[2010-03-25]
+- Updated the Plugin to work for Rails 2.0
+- Implemented Rspec to the plugin
+- Re-structured the whole plugin as per latest standards
+- Deprecated geography_division_options_for_selection option. use only geography_division_select
+
+[2009-04-03]
+- Created the Plugin
+- Moved the Plugin to http://github.com/heurionconsulting/geography_division_select

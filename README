@@ -6,7 +6,7 @@ GeographyDivisionSelect
 ---------------------------------------------------------------
 
 Geography Division Select 2.0 is a select tag which helps developers to display all divisions of the World. 
-This plugin is similar to the country_select and state_select plugins and includes both mechanisms. 
+This plugin is similar to the country_select and state_select plugins and includes both mechanisms. Geography Division Select 2.0 is the extension of Geography Division Select plugin (http://github.com/heurionconsulting/geography_division_select) and it has been upgraded to be used for Rails 2.x format. It also implements RSPEC test cases.
 
 Using Geography Division Select a user can
 1. List all the Regions (Continents) of the world (based on conditions)
@@ -33,7 +33,7 @@ Install
 				Usage
 ---------------------------------------------------------------
 
-Geography Division select can be used in below method
+Geography Division select 2.0 can be used in below method
 
 -Select tag which generates the HTML SELECT and OPTION TAGS
  --geography_division_select(object,method,options,html_options)
@@ -160,7 +160,7 @@ Displays all the countries which are not part of Asia and South America regions 
 
 <p>Example 10: State Drilldown using Country in Only conditions and Selected
 <select name="geography">
-<%= geography_division_options_for_select(:drilldown=>"state",:only=>{:country=>"India,United Kingdom"},:selected=>"Greater London") %></select>
+<%= geography_division_select(:geography,:geography,:drilldown=>"state",:only=>{:country=>"India,United Kingdom"},:selected=>"Greater London") %></select>
 </p>
 Displays all the states of India and United Kingdom with London being selected
 
@@ -178,32 +178,31 @@ Displays all the 7 regions of the world with Asia, North America and Europe in t
 Displays all the 239 countries of the world with USA, UK and India being in the priority list.
 </p>
 
---------------------------------------------------------------------
-   New in Geography Division Select 2.0
---------------------------------------------------------------------
+---------------------------------------------------------------------------------------------
+   Changes in Geography Division Select 2.0 on par of its parent Geography Division Select
+---------------------------------------------------------------------------------------------
 => Implemented to meet the requirments of Rails 2.0
-=> Written with all possible Rspec Code Examples
+=> Written Rspec Code Examples
+=> Removed geography_division_optons_for_select method usage as for now. Will be re-implemented in the future.
 
 
 --------------------------------------------------------------------
-   Contributions for Geography Division Select 1.0
+   Contributions / Credits
 --------------------------------------------------------------------
+
+for Geography Division Select 2.0
+
+1. Satish N Kota (Heurion Consutling) for programming the plugin
+2. Ganesh Mohan for configuration and writing RSpec examples
+3. Sreepal M for writing RSpec examples
+
+
+for Geography Division Select
 
 1. Satish N Kota (Heurion Consutling) for programming the plugin
 2. Rajeshwari, Santhosh, Prabhakar for data collection and validation of all the necessary data to create regions, countries and most important states.
 3. Subhash Mohan for writing Examples
 4. Wikipedia.org -- for having provided all necessary data using which the complete plugin wouldn't have been successful.
-
-
---------------------------------------------------------------------
-   Contributions for Geography Division Select 2.0
---------------------------------------------------------------------
-
-1. Satish N Kota (Heurion Consutling) for programming the plugin
-2. Sreepal M(Heurion Consutling) & Ganesh Mohan(Heurion Consutling) for writing Rspecs Examples
-4. Wikipedia.org -- for having provided all necessary data using which the complete plugin wouldn't have been successful.
-
-
 
 
 --------------------------------------------------------------------
@@ -215,16 +214,13 @@ Any issues regarding bugs in plugin code or in the data/information can be broug
 email: info@heurionconsulting.com
 website: www.heurionconsulting.com
 blog: http://railsvoice.wordpress.com
+wiki: http://wiki.github.com/heurionconsulting/geography_division_select_2.0
 
 --------------------------------------------------------------------
 						Disclaimer
 ---------------------------------------------------------------------
 
-The list of Regions, Countries, States/Provinces/Districts/Atolls/Islands, etc., are based on informatoin collected in the internet.
-We are thankful to various sites  especially to Wikipedia.org for having provided the information. All the data provided have been converted into
-pure english alphabet format and special characters are converted to its nearest english alphabet. The authors have tried their level best to provide 
-adequate and correct information based on the analysis and takes no responsiibility if so ever if any information is incorrect or is in form that 
-offend any users. The authors acknowledges if any error is brought to notice and shall make necessary changes. Please review the data carefully before you use it
+The list of Regions, Countries, States/Provinces/Districts/Atolls/Islands, etc., are based on information collected in the internet. We are thankful to various sites  especially to Wikipedia.org for having provided the information. All the data provided have been converted into pure english alphabet format and special characters are converted to its nearest english alphabet. The authors have tried their level best to provide adequate and correct information based on the analysis and takes no responsiibility if so ever if any information is incorrect or is in form that offend any users. The authors acknowledges if any error is brought to notice and shall make necessary changes. Please review the data carefully before you use it
 
 ---------------------------------------------------------------------
 						License
