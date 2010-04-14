@@ -4,9 +4,9 @@ def installation_completed
 	installation_message = <<MESSAGE
 Congratulations for setting up geography_division_select plugin.
 
-Please download the latest plugin from http://github.com/heurionconsulting/geography_division_select_2.0
+Please download the latest plugin from http://github.com/heurionconsulting/geography_division_select
 
-You can also find documentation about this plugin at http://wiki.github.com/heurionconsulting/geography_division_select_2.0
+You can also find documentation about this plugin at http://wiki.github.com/heurionconsulting/geography_division_select
 
 DISCLAIMER: The list of Regions, Countries, States/Provinces/Districts/Atolls/Islands, etc., are based on informatoin collected in the internet.
 We are thankful to various sites  especially to Wikipedia.org for having provided the information. All the data provided have been converted into
