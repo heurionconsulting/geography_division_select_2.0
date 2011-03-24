@@ -1,5 +1,10 @@
 GeographyDivisionSelect
 =======================
+----------------------------------------------------------------------------------------------------------
+                                  INFORMATION
+----------------------------------------------------------------------------------------------------------
+
+Geography Division Select has been tested and found working correctly for Rails 3.0.5.  We have updated http://www.railsplugins.org with the same.
 
 ---------------------------------------------------------------
 				Description
@@ -7,6 +12,8 @@ GeographyDivisionSelect
 
 Geography Division Select 2.0 is a select tag which helps developers to display all divisions of the World. 
 This plugin is similar to the country_select and state_select plugins and includes both mechanisms. Geography Division Select 2.0 is the extension of Geography Division Select plugin (http://github.com/heurionconsulting/geography_division_select) and it has been upgraded to be used for Rails 2.x format. It also implements RSPEC test cases.
+
+Geography Division Select 2.0 has also been tested for working for Rail 3.x.
 
 Using Geography Division Select a user can
 1. List all the Regions (Continents) of the world (based on conditions)
